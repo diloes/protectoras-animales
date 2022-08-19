@@ -8,46 +8,45 @@ import HappyFamilies from "../components/HappyFamilies";
 import HomeNewPartner from "../components/HomeNewPartner";
 
 const images = [
-  {
-    id: "a8s123123a",
-    url: "img-1.jpeg",
-    title: "sara & poppy",
-    description:
-      "“Encontré a Poppy gracias a la protectora Animales Felices, y ya no puedo imaginarme mi vida sin él” ",
-  },
-  {
-    id: "8132n1le1",
-    url: "img-2.jpeg",
-    title: "sara & poppy",
-    description:
-      "“Encontré a Poppy gracias a la protectora Animales Felices, y ya no puedo imaginarme mi vida sin él” ",
-  },
-  {
-    id: "laic9qoma2",
-    url: "img-3.jpeg",
-    title: "",
-    description: "",
-  },
+	{
+		id: 'a8s123123a',
+		url: 'img-1.jpeg',
+		title: 'sara & poppy',
+		description:
+			'“Encontré a Poppy gracias a la protectora Animales Felices, y ya no puedo imaginarme mi vida sin él” ',
+	},
+	{
+		id: '8132n1le1',
+		url: 'img-2.jpeg',
+		title: 'sara & poppy',
+		description:
+			'“Encontré a Poppy gracias a la protectora Animales Felices, y ya no puedo imaginarme mi vida sin él” ',
+	},
+	{
+		id: 'laic9qoma2',
+		url: 'img-3.jpeg',
+		title: '',
+		description: '',
+	},
 ];
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>Protectora de animales</title>
-        <meta
-          name="description"
-          content="Adoptando un animal, le das una segunda vida a aquellos que no han tenido tanta suerte"
-        />
-        <link rel="icon" href="/accent.svg" />
-      </Head>
+	return (
+		<div className={styles.container}>
+			<Head>
+				<title>Protectora de animales</title>
+				<meta
+					name='description'
+					content='Adoptando un animal, le das una segunda vida a aquellos que no han tenido tanta suerte'
+				/>
+				<link rel='icon' href='/accent.svg' />
+			</Head>
 
       <Header />
       <HomeNewPartner />
       <About_us />
       <HappyFamilies images={images} />
-
-      <main className={styles.main}></main>
-    </div>
-  );
+			<main className={styles.main}></main>
+		</div>
+	);
 }
